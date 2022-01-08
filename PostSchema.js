@@ -11,6 +11,10 @@ const PostSchema = new mongoose.Schema(
         },
         author:{
             type: mongoose.Types.ObjectId
+        },
+        categories:{
+            type: Array,
+            default: []
         }
     },
     {
